@@ -1,0 +1,23 @@
+# 基础设置
+max_iterations: 10
+project_root: "./workspace"
+
+# AI 模型适配
+llm:
+  provider: "deepseek"
+  model: "deepseek-v4-flash"
+  api_key_env: "your_api"
+
+# 测试命令 - 运行workspace中的生成代码测试
+# pytest会自动将workspace目录加入Python路径，确保测试文件能import生成的模块
+test_command: "pytest workspace/ -v --tb=short"
+
+# 便签本路径
+scratchpad_path: "ralph_scratchpad.md"
+
+# 帽子角色提示词路径（可选）
+prompts:
+  planner: "prompts/planner.md"
+  builder: "prompts/builder.md"
+  critic: "prompts/critic.md"
+  finalizer: "prompts/finalizer.md"

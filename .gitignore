@@ -1,0 +1,33 @@
+# Python 字节码缓存
+__pycache__/
+*.py[cod]
+*.pyo
+
+# pytest 缓存
+.pytest_cache/
+
+# 打包生成的元数据
+*.egg-info/
+dist/
+build/
+
+# 虚拟环境
+venv/
+.venv/
+env/
+.env/
+
+# IDE 配置
+.vscode/
+
+# 运行时生成的文件
+ralph.log
+ralph_scratchpad.md
+workspace/
+
+# 操作系统生成文件
+Thumbs.db
+.DS_Store
+
+# spec文件
+spec.md
