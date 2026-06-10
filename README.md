@@ -105,21 +105,6 @@ prompts:                        # 自定义提示词路径
 | `critic.md` | 审查维度、严重度分级 |
 | `finalizer.md` | 完成判定门槛、报告格式 |
 
-## TDD 开发
-
-本项目严格按照 TDD"红-绿-重构"循环开发：
-
-```bash
-# 运行全部测试
-pytest tests/ -v
-
-# 运行单个模块
-pytest tests/test_hats.py -v
-
-# 运行集成测试
-pytest tests/test_integration.py -v
-```
-
 ## 扩展
 
 - **自定义帽子**：创建一个继承 `BaseHat` 的类，注册到 `HatRegistry`，插入 Ralph Loop
@@ -131,4 +116,4 @@ pytest tests/test_integration.py -v
 - Python >= 3.9
 - click >= 8.0
 - pyyaml >= 6.0
-- pytest >= 7.0（开发）
+- pytest >= 7.0
